@@ -24,7 +24,7 @@ $green:   #357a32 !default;
 $teal:    #20c997 !default;
 $cyan:    #008196 !default;
 
-$primary:       $blue !default;
+$primary:       #6aa84f !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $orange !default;
@@ -563,6 +563,10 @@ div.criteria-description {
     background: #1d2125;
 }
 
+.moremenu .dropdown-item[aria-current="true"], .moremenu .dropdown-item.active {
+    background-color: transparent;
+    color: #0f0;
+}
 
 .moremenu .nav-link:hover,
 .moremenu .nav-link:focus {
@@ -709,6 +713,13 @@ a:hover {
 }
 
 /*************************** FORMAT TILES ****************************/
+
+a:not([class]):focus {
+    background-color: #0f0;
+    box-shadow: 0 -0.2rem #0f0, 0 0.2rem #343a40;
+    border-top-left-radius: calc(0.5rem - 1px);
+    border-top-right-radius: calc(0.5rem - 1px);
+}
 
 .format-tiles a.nav-link {
     color: #00ff00!important;
@@ -929,4 +940,31 @@ html.h5p-iframe, html.h5p-iframe > body {
 
 .countdown-timer {
     pointer-events: none!important;
+}
+
+button#back-to-top.btn.btn-icon.bg-secondary {
+    background-color: #202225!important;
+}
+
+button#back-to-top.btn.btn-icon.bg-secondary:hover {
+    background-color: #6aa84f!important;
+}
+
+.block_xp .xp-bg-gray-200 {
+    background-color: #36393f!important;
+}
+
+.pts {
+    color: #0f0!important;
+    font-weight: 500!important;
+}
+
+.block_xp .xp-border-sky-400 {
+    border-color: #0f0!important;
+}
+
+/*************************** Discourse Dirty Embeddings. ****************************/
+
+#discourse-comments iframe {
+    min-height: 500px;
 }

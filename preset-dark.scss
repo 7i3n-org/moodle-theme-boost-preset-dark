@@ -170,6 +170,8 @@ body {
 
 @include bg-variant(".bg-gray", $gray-200, true);
 
+/*************************** Darkification. ****************************/
+
 .dropdown-menu {
     background-color: #18191c;
     border: 1px solid #00ff00;
@@ -571,6 +573,10 @@ div.criteria-description {
 .moremenu .nav-link:focus {
   border-color: transparent;
   background-color: black;
+}
+
+.moremenu .nav-link.active:focus, .moremenu .nav-link.active:hover {
+    background-color: #343a40;
 }
 
 .navbar-nav .nav-link, .navbar-nav .btn, .navbar-nav a.btn, .navbar-nav .login a {
